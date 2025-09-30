@@ -1,3 +1,6 @@
+/*
+Write a C program to compute the determinant of a square matrix (size n × n, with n ≤ 3).
+*/
 #include<stdio.h>
 int main()
 {
@@ -5,7 +8,7 @@ int main()
     printf("Enter the size of matrix:");
     scanf("%d",&n);
     int arr[n][n];
-    printf("Enter the array elements:");
+    printf("Enter the array elements:\n");
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n;j++)

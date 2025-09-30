@@ -1,3 +1,8 @@
+/*
+A square matrix of size n×n is called a magic square if the sum of every row, every column, and both
+diagonals are equal.
+Write a C program to check whether a given matrix is a magic square or not.
+*/
 #include<stdio.h>
 int main()
 {
@@ -5,7 +10,7 @@ int main()
     printf("Enter the size of matrix:");
     scanf("%d",&n);
     int arr[n][n];
-    printf("Enter the array elements:");
+    printf("Enter the array elements:\n");
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n;j++)
@@ -24,74 +29,58 @@ int main()
     }
     printf("\n");
     int sum=0;
-     
-  for(int i=0;i<n;i++)
-    {   
-         int sumrow=0;
-        for(int j=0;j<n;j++)
-        {
-            sumrow=sumrow+arr[i][j];
-        }
-        if(i==0)
-        {
-          sum=sumrow; 
-        }
-        if(sumrow!=sum)
-        {
-          printf("Not magic square");
-           return 0;
-        }
-
-    }
-   
-    //checking for columns
-    
-
-    for(int i=0;i<n;i++)
-    {   
-         int sumcol=0;
-        for(int j=0;j<n;j++)
-        {
-            sumcol=sumcol+arr[j][i];
-        }
-        if(i==0)
-        {
-          sum=sumcol; 
-        }
-        
-        else if(sumcol!=sum)
-        {
-            printf("Not magic square");
-            return 0;
-        }
-
-    }
-    
-    //checking diagonal sum
-    int sumdiag1=0;
-    int sumdiag2=0;
     for(int i=0;i<n;i++)
     {
-        
-        for(int j=0;j<n;j++)
+      sum=sum+arr[0][i];
+    }
+    for(int i=0;i<n;i++)
+    {   int sumrow=0;
+      for(int j=0;j<n;j++)
+      {
+          sumrow+=arr[i][j];
+      }
+      if(sumrow!=sum)
+      {
+        printf("Not a magic square");
+        return 0;
+      }
+    }
+    for(int i=0;i<n;i++)
+    { int sumcol=0;
+      for(int j=0;j<n;j++)
+      {
+        sumcol+=arr[j][i];
+      }
+      if(sumcol!=sum)
+      {
+          printf("Not a Magic square");
+          return 0;
+      }
+    }
+    int sumdiag1=0,sumdiag2=0;
+    for(int i=0;i<n;i++)
+    {
+      for(int j=0;j<n;j++)
+      {
+        if(i==j)
         {
-            if(i==j){
-            sumdiag1 +=arr[i][j];
-          }
-          if(i+j==(n-1))
-          {
-            sumdiag2 += arr[i][j];
-          }
-       } 
+          sumdiag1+=arr[i][j];
+        }
+        if(i+j==(n-1))
+        {
+          sumdiag2+=arr[i][j];
+        }
+      }
     }
-    if(sumdiag1==sum && sumdiag2==sum)
+    if(sumdiag1!=sum || sumdiag2!= sum)
     {
-        printf("it is a magic square");
-    }
-    else
-    {
-     printf("It is not a magic square");
+      printf("Not a Magic square");
       return 0;
     }
+    if(sumdiag1==sum && sumdiag2==sum)
+   { 
+    printf("This is a Magic square");
+   }
+   return 0; 
 
 }

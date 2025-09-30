@@ -1,3 +1,6 @@
+/*Write a program to multiply two matrices A and B, where A is of size m × n and B is of size n × p.
+Display the resulting m × p matrix.
+*/
 #include<stdio.h>
  int main()
 {
@@ -46,7 +49,7 @@
         {
             for(int k=0;k<n;k++)
             {
-                prod[i][j] += +( arr1[i][k]*arr2[k][j] );
+                prod[i][j] += ( arr1[i][k]*arr2[k][j] );
             }
         }
     }

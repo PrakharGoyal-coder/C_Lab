@@ -1,5 +1,8 @@
+/*
+Write a program to check if a square matrix is diagonally dominant.
+*/
 #include<stdio.h>
-#include<stdlib.h>  // to use abs 
+#include<stdlib.h>  // to use absolute function
 int main()
 {
     int n;
@@ -32,7 +35,7 @@ int main()
             if(i!=j)
             sum=sum+abs(arr[i][j]);
         }
-        if(diag<sum)
+           if(diag<sum)
         {
             printf("Not diagonally dominant");
             return 0;
