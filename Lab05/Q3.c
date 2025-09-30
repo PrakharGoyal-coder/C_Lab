@@ -1,3 +1,8 @@
+/*
+Update Q1 to output two arrays:
+• one array containing only the negative numbers,
+• another array containing the non-negative numbers.
+*/
 #include<stdio.h>
 int main()
 {
@@ -54,4 +59,5 @@ int main()
     {
         printf("%d ",neg_arr[i]);
     }
+    return 0;
 }

@@ -1,3 +1,8 @@
+/*Write a C program that, given a array of n numbers, counts and prints the number of negative numbers
+and the number of positive numbers.
+Test your program with this array:
+{3,−4,−6, 9, 0, 7, 2, 10,−2,−1}
+*/
 #include<stdio.h>
 int main()
 {
@@ -25,5 +30,5 @@ int main()
     }
     printf("Number of negative numbers in the array:%d\n",neg_count);
     printf("Number of positive numbers in the array:%d\n",pos_count);
-
+    return 0;
 }

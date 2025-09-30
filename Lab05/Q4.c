@@ -1,3 +1,10 @@
+/*
+Write a C program that takes as input a array and returns another array that contains each element
+of the original array twice.
+Example:
+Input: {2, 3, 1}
+Output: {2, 2, 3, 3, 1, 1}
+*/
 #include<stdio.h>
 int main()
 {
@@ -32,5 +39,5 @@ int main()
          printf("%d ",arr2[i]);
      }
      printf("\n");
-
+    return 0;
 }

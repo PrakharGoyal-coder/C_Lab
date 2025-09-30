@@ -41,5 +41,5 @@ int main()
         printf("%d ",intersection[i]);
     }
     
-
+    return 0;
 }

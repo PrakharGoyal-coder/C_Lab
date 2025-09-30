@@ -1,3 +1,10 @@
+/*
+Write a C program that prompts the user to enter 5 numbers, stores them in an array, and then prints:
+• the array of numbers,
+• the maximum number,
+• the minimum number,
+• the sum of the numbers.
+*/
 #include<stdio.h>
 int main()
 {
@@ -34,4 +41,5 @@ int main()
      printf("Maximum number:%d\n",max);
      printf("Minimum number:%d\n",min);
      printf("sum:%d\n",sum);
+     return 0;
 }

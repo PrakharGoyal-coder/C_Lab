@@ -1,8 +1,12 @@
+/*
+Write a C program that finds the second largest and second smallest numbers in a array of n
+numbers.
+*/
 #include<stdio.h>
 int main()
 {
     int n;//to store number of elements in the array
-    printf("Enter the no. of elements in the array:");
+    printf("Enter the no. of elements in the array(>3):");
     scanf("%d",&n);
     int arr[n];
     printf("Enter numbers in the array:\n");
@@ -45,4 +49,5 @@ int main()
      }
      printf("Second smallest number:%d\n",sec_smallest);
      printf("second largest number:%d\n",sec_largest);
+     return 0;
 }
