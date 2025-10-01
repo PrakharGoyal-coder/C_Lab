@@ -1,3 +1,9 @@
+/*
+Saddle point in a matrix is an element aij that is simultaneously:
+• the minimum element in its row, and
+• the maximum element in its column.
+Write a program to find the saddle point(s) of a given n × n matrix
+*/
 #include<stdio.h>
 int main()
 {
