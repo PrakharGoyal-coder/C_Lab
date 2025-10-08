@@ -1,3 +1,10 @@
+/*
+Menu-Driven Program using Enum: Define an enum Operation with values { ADD, SUBTRACT,
+MULTIPLY, DIVIDE, EXIT }. Write a menu-driven program that:
+• Prompts the user to choose an operation.
+• Performs the corresponding arithmetic operation on two integers.
+• Continues until the user selects EXIT.
+*/
 #include <stdio.h>
 
 enum Operation{ADD=1,SUBTRACT,MULTIPLY,DIVIDE,EXIT };

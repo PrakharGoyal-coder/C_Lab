@@ -1,4 +1,9 @@
-#include<stdio.h>
+/*
+Q1. Basic Structure Usage: Define a structure Student with roll number, name and marks. Write functions
+to:
+• Accept details of n students from the user.
+• Print all student records in tabular form.#include<stdio.h>
+*/
 
 struct Student
 {

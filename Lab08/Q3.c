@@ -1,3 +1,10 @@
+/*
+Q3. Structures with Functions: Define a structure Complex with two members: real and imaginary. Write
+functions to:
+• Add two complex numbers.
+• Multiply two complex numbers.
+• Display a complex number in a + bi form.
+*/
 #include<stdio.h>
 struct Complex
 {

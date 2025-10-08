@@ -1,3 +1,9 @@
+/*
+Q5. Enumerations in Practice: Use an enum Weekday { MON, TUE, WED, THU, FRI, SAT, SUN }.
+Write a program that:
+• Takes a number (1–7) as input and prints the corresponding day.
+• Prints whether the day is a weekday or weekend.
+*/
 #include <stdio.h>
 
 enum Weekday {MON = 1,TUE,WED,THU,FRI,SAT,SUN };

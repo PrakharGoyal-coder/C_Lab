@@ -1,3 +1,14 @@
+/*
+Q7. Mini Project – Student Database: Create a menu-driven program using structures where the user
+can:
+
+(a) Add a new student record.
+(b) Display all student records.
+(c) Search for a student by roll number.
+(d) Update marks of a student.
+(e) Exit.
+Use functions for each task.
+*/
 #include<stdio.h>
 
 struct Student

@@ -1,3 +1,9 @@
+/*
+Q4. Nested Structures: Create a structure Date with day, month and year. Use it inside an Employee
+structure with name and salary. Write functions to:
+• Input and display employee details.
+• Print the names of employees who joined after the year 2020.
+*/
 #include<stdio.h>
 struct Date
 {

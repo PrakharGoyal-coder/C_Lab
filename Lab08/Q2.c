@@ -1,3 +1,9 @@
+/*
+Q2. Array of Structures: Extend Q1 to find:
+• The student with the highest marks.
+• The average marks of the class.
+• The list of students scoring above average.
+*/
 #include<stdio.h>
 struct Student
 {
